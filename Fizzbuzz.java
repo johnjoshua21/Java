@@ -15,19 +15,6 @@ public class Prog {
 			System.out.println("Buzz");
 		else
 			System.out.println("Enter Valid no!!!!!!!!!!!");
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+				
 	}
-	
-	
-
-
 }
