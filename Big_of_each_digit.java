@@ -3,8 +3,6 @@ package Basics;
 import java.util.Scanner;
 
 public class Vibro {
-	
-	
 	static int reverse_num(int number) {
 		int reverse=0;
 		while(number != 0)   
@@ -14,14 +12,12 @@ public class Vibro {
 		number = number/10;  
 		}  
 		return reverse;
-	}
-	
+	}	
 	static int fibig(int x,int y,int z) {
 		int temp=x>y?x:y;
 		int big=temp>z?temp:z;
 		return big;
 	}
-
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter any 3 number ");
@@ -46,5 +42,4 @@ public class Vibro {
 		}	
 		System.out.println(res);
 	}
-
 }
