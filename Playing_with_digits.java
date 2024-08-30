@@ -1,9 +1,6 @@
 package Basics;
-
 import java.util.Scanner;
-
 public class string {
-
 	static int reverse_num(int number) {
 		int reverse=0;
 		while(number != 0)   
@@ -14,9 +11,6 @@ public class string {
 		}  
 		return reverse;
 	}
-	
-	
-	
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter any 3 number ");
@@ -37,15 +31,6 @@ public class string {
 				max=res;
 			z/=10;
 		}
-		System.out.println((a*b)-max);
-		
-		
-		
-		
-		
-		
-		
-
-	}
-
+		System.out.println((a*b)-max);		
+		}
 }
