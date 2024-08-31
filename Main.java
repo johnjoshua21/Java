@@ -1,29 +1,22 @@
 import java.util.Arrays;
 public class Main {
-
-    public static void Bubble(int[] arr,int size){
-        for (int i=0;i<size;i++){
-            for (int j=0;j<size-i-1;j++){
-                if (arr[j]>arr[j+1]){
-                    int temp= arr[j];
-                    arr[j]=arr[j+1];
-                    arr[j+1]=temp;
+    public static void main(String[] args) {
+        int[] arr = {0, 0, 1, 1, 1, 1, 2, 3, 3};
+        int size = arr.length;
+        int cnt = 0;
+        int flag = arr[0];
+        int i = 1;
+        for (; i < size - 1; i++) {
+            if (arr[i] == arr[i + 1] && arr[i] != flag) {
+                flag = arr[i];
+            } else if (arr[i] == arr[i + 1] && arr[i] == flag) {
+                for (int j = i; j < size - 1; j++) {
+                    arr[j] = arr[j + 1];
                 }
+                cnt++;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        int[] arr = {8, 2, 3, 7, 9, 1, 5, 6, 4};
-        int size = arr.length;
-        System.out.println("Bfore Sorting");
-        for (int nums : arr) {
-            System.out.print(nums+" ");
-        }
-        Bubble(arr,size);
-        System.out.println("\nAfter Sorting");
-        for (int nums : arr) {
-            System.out.print(nums+" ");
-        }
+        System.out.println(size - cnt);
+        System.out.println(Arrays.toString(arr));
     }
 }
